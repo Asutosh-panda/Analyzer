@@ -6,6 +6,7 @@ from .mlModel.imdb import imdbModel
 
 
 def index(request):
+    content={"content":""}
     if request.method == 'POST':
         print(request.POST.get('submit'))
         y_pred = imdbModel(str(request.POST.get('submit')))

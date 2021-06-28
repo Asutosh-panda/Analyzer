@@ -11,12 +11,16 @@ ps = PorterStemmer()
 
 
 def imdbModel(X_test):
+    if X_test=="":
+      return "empty"
     with open('./app/mlModel/tf.pkl','rb') as file1:
         tf = pickle.load(file1)
     corpus = clean_doc([X_test])
     corpus = tf.transform(corpus)
+
     with open('./app/mlModel/imdb_lr (1).pkl','rb') as file2:
         model_lr=pickle.load(file2)
+
     y_pred = model_lr.predict(corpus)
     if y_pred[0]==1:
           y_pred="positive"
