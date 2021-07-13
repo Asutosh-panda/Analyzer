@@ -1,0 +1,207 @@
+.svgDiv{
+    background: #0f0c29; 
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    }
+    .svg1{
+        position: absolute;
+        animation: svg1ani 12s linear infinite;
+        display: flex;
+        justify-content: center;
+        visibility: hidden;
+    }
+    @keyframes svg1ani {
+        0%{
+            
+            visibility: visible;
+        }
+        30%{
+            visibility: hidden;
+        }
+        50%{
+            visibility: hidden;
+        }
+        100%{
+          
+            visibility: hidden;
+        }
+        
+    }
+    .svg2{
+        position: absolute;
+        visibility: hidden;
+        animation: svg2ani 12s linear 4s infinite;
+        display: flex;
+        justify-content: center;
+    }
+    @keyframes svg2ani {
+        0%{
+            
+            visibility: visible;
+        
+        }
+        30%{
+            visibility: hidden;
+        }
+        50%{
+            visibility: hidden;
+        }
+        100%{
+          
+            visibility: hidden;
+        }
+        
+    }
+    .svg3{
+        position: absolute;
+        visibility: hidden;
+        animation: svg3ani 12s linear 8s infinite;
+        display: flex;
+        justify-content: center;
+    }
+    @keyframes svg3ani {
+        0%{
+            
+            visibility: visible;
+        }
+        30%{
+            visibility: hidden;
+        }
+        50%{
+            visibility: hidden;
+        }
+        100%{
+          
+            visibility: hidden;
+        }
+        
+    }
+    
+#pro12,#pro22,#pro32{
+    opacity: 0;
+}
+#pro12{
+    animation: pro1ani 4s linear 1s infinite;
+}
+#pro22{
+    animation: pro2ani 4s linear 2.2s infinite;
+}
+#pro32{
+    animation: pro3ani 4s linear 3.4s infinite;
+}
+@keyframes pro1ani{
+    0%{
+        opacity: 1;
+    }
+
+    30%{
+        opacity: 1;
+    }
+    35%{
+           opacity: 0;
+    }
+}
+@keyframes pro2ani{
+    0%{
+        opacity: 1;
+    }
+
+    30%{
+        opacity: 1;
+    }
+    35%{
+           opacity: 0;
+    }
+}
+@keyframes pro3ani{
+    0%{
+        opacity: 1;
+    }
+
+    30%{
+        opacity: 1;
+    }
+    35%{
+           opacity: 0;
+    }
+
+}
+
+#east_circle,#west_circle,#north_circle,#south_circle{
+    transform-origin: 452px 182px;
+    animation: circleani 2s linear infinite;
+    
+}
+@keyframes circleani {
+    0%{
+       transform:rotate(5deg) ;
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+#Vector_3{
+    animation: boxani 4s infinite ease-in-out;
+}
+@keyframes boxani{
+    0%{
+        fill: crimson;
+    }
+    25%{
+        fill: magenta;
+    }
+    50%{
+        fill: cyan;
+    }
+    75%{
+        fill: lawngreen;
+    }
+    100%{
+        fill: yellow;
+        }
+}
+#psent,#nsent{
+    animation:lightSpeedInLeft ease-out infinite;
+    animation-duration: 3.99s;
+}
+#sent{
+    animation: sentani 3.99s ease-in-out infinite ;
+    opacity: 0;
+
+    
+}
+@keyframes sentani {
+    0%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 0;
+        
+        
+    }
+    100%{
+        opacity: 1;
+        
+    }
+    
+}
+#thought2{
+    animation:bounce 3.99s infinite;
+    
+}
+.svg3 #thought{
+    animation: tani 3.99s infinite;   
+    opacity: 0;
+}
+@keyframes tani {
+    0%{
+        opacity: 0;
+    }
+  50%{
+      opacity: 0;
+  }
+    100%{
+        opacity: 1;
+    }
+}

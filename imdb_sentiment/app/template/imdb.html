@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+  {% block body %}
+        <div class="input" style="height: 60vh;margin-bottom: 4vh;">
+            <form method="POST">
+                {% csrf_token %}
+                <textarea placeholder="Enter the movie review" style="width: -webkit-fill-available;height: 60vh;" name="submit"></textarea>
+                <div class="btn" style="display: flex;justify-content: space-evenly;margin-top: 2vh;">
+                <!-- <button  onclick="analzeFunc()">Analyze</button> -->
+                <button type="submit" class="btn btn-outline-warning" style="color: yellow;">Analyze</button>
+            </form>
+        </div>
+        </div>
+        <div class="output" style="margin-top: 4vh;">
+           <hr>
+            {% if content != "empty" %}
+             {%if content == "positive" %}
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                
+                <strong> {{content}} !</strong> This is a great movie...GO for it champ .
+                <button type="button" class="close" data-bs-dismiss="alert" aria-label="Close">x</button>
+              </div>
+              {% endif %}
+              {% if content == 'negetive' %}
+              <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <strong> {{content}} !</strong> This is not an ideal choice...Not recommended .
+                <button type="button" class="close" data-bs-dismiss="alert" aria-label="Close">x</button>
+              </div>
+            {% endif %}
+            {% endif %}
+        </div>
+   
+        {% endblock body %}
