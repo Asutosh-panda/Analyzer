@@ -17,7 +17,7 @@ def imdb(request):
 
 def hate(request):
     context = {'content':""}
-    hateModel([""])
+    hateModel("")
     if request.method=="POST":
         content = str(request.POST.get('hateSubmit'))
         content = hateModel([content])

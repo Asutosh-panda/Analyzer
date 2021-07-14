@@ -1,6 +1,6 @@
 import numpy as np
 import regex as re
-import nltk
+
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
 sw = stopwords.words('english')

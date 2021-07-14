@@ -1,7 +1,7 @@
 import numpy as np
 from keras.preprocessing.sequence import pad_sequences
 from keras.models import load_model
-from keras.preprocessing.text import Tokenizer
+
 import pickle
 from ..clean_text import clean
 
