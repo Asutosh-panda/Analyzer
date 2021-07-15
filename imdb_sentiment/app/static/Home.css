@@ -2,7 +2,10 @@
     background: #0f0c29; 
     background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
     }
     .svg1{
         position: absolute;
@@ -34,6 +37,8 @@
         animation: svg2ani 12s linear 4s infinite;
         display: flex;
         justify-content: center;
+        transform: scale(0.8);
+
     }
     @keyframes svg2ani {
         0%{
@@ -209,67 +214,70 @@
 @media only screen and (max-width:1000px) 
 {
     .svgDiv{
-        height: 390vh !important;
-        width: 282vw;
+        /* height: 390vh !important;
+        width: 282vw; */
+        top:40vh;
        
     }
     /* .svg1{
         
         transform: scale(1.6);
     } */
-    #svg_3{
-        height: 175vh !important;
+    /* #svg_3{
+        height: 44vh !important;
         transform: scale(1.6) !important;
     }
     #svg_1{
-        height: 259vh !important;
+        height: 44vh !important;
         transform: scale(1.6) !important;
     }
     #svg_2{
-        height: 0vh !important;
+        height: 44vh !important;
         transform: scale(2) !important;
     }
+    */
     #svg_1_text{
       
         transform: scaleX(0.6);
         transform-origin: center;
-       }
+       } 
+       
 }
 @media only screen and (max-width:560px)
 {
     .svgDiv{
-        width: 400vw;
+        /* width: 400vw; */
     }
 }
 @media only screen and (max-width:360px)
 {
     .svgDiv{
-        width: 390vw;
+        /* width: 390vw; */
     }
     
 }
 @media only screen and (max-width:290px)
 {
     .svgDiv{
-        height: 390vh !important;
-        width: 410vw;
+        /* height: 390vh !important;
+        width: 410vw; */
     }
     #svg_3{
-        height: 175vh !important;
-        transform: scale(1.3) !important;
+        /* height: 175vh !important;
+        transform: scale(1.3) !important; */
     }
     #svg_1{
-        height: 259vh !important;
-        transform: scale(1.3) !important;
+        /* height: 259vh !important;
+        transform: scale(1.3) !important; */
     }
     #svg_2{
-        height: 0vh !important;
-        transform: scale(1.5) !important;
+        /* height: 0vh !important;
+        transform: scale(1.5) !important; */
     }
     #svg_1_text{
       
-        transform: scaleX(0.6);
-        transform-origin: center;
+        transform: scaleX(0.86);
+        /* transform-origin: center; */
        }
     
 }
