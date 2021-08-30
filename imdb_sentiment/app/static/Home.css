@@ -9,10 +9,10 @@
     }
     .svg1{
         position: absolute;
-        animation: svg1ani 12s linear infinite;
+/*         animation: svg1ani 12s linear infinite; */
         display: flex;
         justify-content: center;
-        visibility: hidden;
+        visibility: visible;
     }
     @keyframes svg1ani {
         0%{
@@ -34,7 +34,7 @@
     .svg2{
         position: absolute;
         visibility: hidden;
-        animation: svg2ani 12s linear 4s infinite;
+/*         animation: svg2ani 12s linear 4s infinite; */
         display: flex;
         justify-content: center;
         transform: scale(0.8);
@@ -61,7 +61,7 @@
     .svg3{
         position: absolute;
         visibility: hidden;
-        animation: svg3ani 12s linear 8s infinite;
+/*         animation: svg3ani 12s linear 8s infinite; */
         display: flex;
         justify-content: center;
     }
