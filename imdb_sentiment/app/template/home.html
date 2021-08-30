@@ -899,6 +899,46 @@
         
         </div>
     </div>
+  <script>
+      svg1 = document.querySelector(".svg1")
+      console.log(svg1)
+      svg2 = document.querySelector(".svg2")
+      console.log(svg2)
+      svg3 = document.querySelector(".svg3")
+      console.log(svg3)   
+
+     
+      setInterval(function hello(){
+             
+         setTimeout(()=>{
+           svg1.style.visibility = "hidden";
+         },4000)
+
+         setTimeout(()=>{
+            svg2.style.visibility ="visible"
+         },4500)
+
+         setTimeout(() => {
+          svg2.style.visibility ="hidden"
+         }, 8500);
+
+         setTimeout(()=>{
+            svg3.style.visibility="visible"
+         },9000)
+
+         setTimeout(()=>{
+           svg3.style.visibility ="hidden"
+         },16050)
+
+         setTimeout(()=>{
+              svg1.style.visibility="visible"
+         },17000)
+
+      return hello;
+      }(),17000)
+    
+    
+    </script>
     {% endblock body %}
       
         
