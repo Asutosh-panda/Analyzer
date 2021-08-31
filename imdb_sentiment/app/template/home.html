@@ -1,8 +1,11 @@
 {% extends 'base.html' %}
+
    {% block body %}
-     <div class="svgDiv" >
+   
+   <div class="main">
+     <div  class="svgDiv" >
         <div class="svg1">
-         <svg id="svg_1" width="100vw" height="100vh" viewBox="0 0 1100 755" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <svg id="svg_1" width="100vw" height="70vh" viewBox="0 0 1100 755" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g id="svg_1_text 1">
             <g id="undraw My answer re k4dv 1">
             <path id="Vector" d="M936.913 573.068C933.638 544.799 917.319 516.946 892.206 507.746C902.11 536.842 902.108 568.762 892.2 597.858C888.341 609.064 882.962 621.097 886.592 632.39C888.85 639.418 894.375 644.794 900.551 648.156C906.727 651.518 913.581 653.12 920.35 654.69L921.682 655.873C932.427 629.826 940.188 601.337 936.913 573.068Z" fill="#26AF23"/>
@@ -594,7 +597,7 @@
         </svg>
         </div>
         <div id="svg_2" class="svg2" style="display: flex;justify-content: center;">
-        <svg width="100vw" height="100vh" viewBox="0 0 1163 855" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="100vw" height="70vh" viewBox="0 0 1163 855" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="Processing_svg 1">
             <g id="Processing svg">
             <g id="pro1">
@@ -666,7 +669,7 @@
             
         </div>
         <div class="svg3">
-      <svg id="svg_3" width="100vw" height="100vh" viewBox="0 0 1243 757" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg id="svg_3" width="100vw" height="80vh" viewBox="0 0 1243 757" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g id="panda2_re" >
          
           <!-- <circle cx="452" cy="182" r="100" fill="green"/>
@@ -898,7 +901,95 @@
           
         
         </div>
+          
     </div>
+     
+    <div class="cards" style="display: flex;">
+
+      <div class="card border-light mb-3" >
+        <div class="face1">
+          <img class="card-icon" id="popcorn" src="../static/images/popcorn.png" alt="popcorn"/>
+        </div>
+        <div class="face2">
+        <div class="card-header"><h2>Movie Analysis</h1></div>
+        <div class="card-body">
+          <h5 class="card-title"><strong>Review through NLP</strong> </h5>
+          <p class="card-text">Skip reading boring lengthy reviews and save your time. Your NLP mate Analyzer will get your work done </p>
+        </div>
+      </div>
+      </div>
+
+      <div class="card border-light mb-3" style="max-width: 18rem;">
+        <div class="face1">
+          <img class="card-icon" id="bully" src="../static/images/bully.png" alt="popcorn"/>
+        </div>
+        <div class="face2">
+        <div class="card-header"><h2>Hate Analysis</h1></div>
+        <div class="card-body">
+          <h5 class="card-title"><strong>NLP hate spech recognition</strong> </h5>
+          <p class="card-text">This NLP unit will check and warn you if there is a hate/abuse or inappropiate use of words/speech/text </p>
+        </div>
+        </div>
+      </div>
+
+     <div class="card border-light mb-3" style="max-width: 18rem;">
+        <div class="face1">
+          <img class="card-icon" id="hate" src="../static/images/hate.png" alt="popcorn"/>
+        </div>
+        <div class="face2">
+        <div class="card-header"><h2>Need API?</h1></div>
+        <div class="card-body">
+          <h5 class="card-title"><strong>Contact us for getting  API</strong>  </h5>
+          <p class="card-text">Want to intergate the API in your web/mobile app.Just send us a mail to get the API at your fingertips</p>
+        </div>
+      </div>
+      </div> 
+    </div>
+<div class="footer">
+        <h1>Footer </h1>
+</div>
+</div>
+    <script>
+      svg1 = document.querySelector(".svg1")
+      console.log(svg1)
+      svg2 = document.querySelector(".svg2")
+      console.log(svg2)
+      svg3 = document.querySelector(".svg3")
+      console.log(svg3)   
+
+     
+      setInterval(function hello(){
+             
+         setTimeout(()=>{
+           svg1.style.visibility = "hidden";
+         },4000)
+
+         setTimeout(()=>{
+            svg2.style.visibility ="visible"
+         },4500)
+
+         setTimeout(() => {
+          svg2.style.visibility ="hidden"
+         }, 8500);
+
+         setTimeout(()=>{
+            svg3.style.visibility="visible"
+         },9000)
+
+         setTimeout(()=>{
+           svg3.style.visibility ="hidden"
+         },16050)
+
+         setTimeout(()=>{
+              svg1.style.visibility="visible"
+         },17000)
+
+      return hello;
+      }(),17000)
+    
+    
+    </script>
+  
     {% endblock body %}
       
         
