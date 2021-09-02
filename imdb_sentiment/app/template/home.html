@@ -2,8 +2,9 @@
 
    {% block body %}
    
-   <div class="main">
-     <div  class="svgDiv" >
+  <div class="main">
+
+    <div  class="svgDiv" >
         <div class="svg1">
          <svg id="svg_1" width="100vw" height="70vh" viewBox="0 0 1100 755" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g id="svg_1_text 1">
@@ -902,23 +903,27 @@
         
         </div>
           
-    </div>
-     
-    <div class="cards" style="display: flex;">
-
+      </div>
+     <div class="services">
+       <h1> <span class="badge bg-warning">Services</h1>
+     </div>
+    <div class="cards" >
       <div class="card border-light mb-3" >
-        <div class="face1">
-          <img class="card-icon" id="popcorn" src="../static/images/popcorn.png" alt="popcorn"/>
+        <div>
+          <div class="face1">
+            <img class="card-icon" id="popcorn" src="../static/images/popcorn2.png" alt="popcorn"/>
+          </div>
+        <div class="face2">        
+          <div class="card-header"><h2>Movie Analysis</h1></div>
+          <div class="card-body">
+            <h5 class="card-title"><strong>Review through NLP</strong> </h5>
+            <p class="card-text">Skip reading boring lengthy reviews and save your time. Your NLP mate Analyzer will get your work done </p>
         </div>
-        <div class="face2">
-        <div class="card-header"><h2>Movie Analysis</h1></div>
-        <div class="card-body">
-          <h5 class="card-title"><strong>Review through NLP</strong> </h5>
-          <p class="card-text">Skip reading boring lengthy reviews and save your time. Your NLP mate Analyzer will get your work done </p>
         </div>
-      </div>
-      </div>
-
+        
+        </div>
+      
+        </div>
       <div class="card border-light mb-3" style="max-width: 18rem;">
         <div class="face1">
           <img class="card-icon" id="bully" src="../static/images/bully.png" alt="popcorn"/>
@@ -929,10 +934,9 @@
           <h5 class="card-title"><strong>NLP hate spech recognition</strong> </h5>
           <p class="card-text">This NLP unit will check and warn you if there is a hate/abuse or inappropiate use of words/speech/text </p>
         </div>
-        </div>
       </div>
-
-     <div class="card border-light mb-3" style="max-width: 18rem;">
+        </div>
+      <div class="card border-light mb-3" style="max-width: 18rem;">
         <div class="face1">
           <img class="card-icon" id="hate" src="../static/images/hate.png" alt="popcorn"/>
         </div>
@@ -943,17 +947,56 @@
           <p class="card-text">Want to intergate the API in your web/mobile app.Just send us a mail to get the API at your fingertips</p>
         </div>
       </div>
-      </div> 
+        </div>
+    </div> 
+  </div>    
+  <div class="footer">
+      
+      <div class="footer-links footer-heading">
+        <h3> <span class="badge bg-warning">Quick Links</h3>
+         <ul class="list-links">
+           <li class="footer-list-links">Home</li>
+           <li class="footer-list-links">About</li>
+           <li class="footer-list-links">Contact</li>
+           <li class="footer-list-links">Getting started</li>
+         </ul>
+      </div>
+
+  <div class="about-me footer-heading">
+    <h3> <span class="badge bg-warning">About Us</h3>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui asperiores, possimus magni mollitia quaerat aliquam excepturi voluptatem id iure iusto accu
+    </p>
+  </div>
+
+  <div class="footer-contact footer-heading">
+    <div class="footer-contact-head">
+      <h3> <span class="badge bg-warning">Contact Us</h3>
+    <div class="footer-contact-div">
+    <i class="fas fa-map-marked-alt"></i>C/39 Sector 14,Rourkela,Odisha,India.
+  </div>
+  <div class="footer-contact-div">
+    <i class="fas fa-phone"></i>9668281322
+  </div>
+  <div class="footer-contact-div">
+    <i class="fas fa-envelope"></i> pandasutosh@gmail.com
+  </div>
+</div>
+<div class="footer-contact-tail">
+      <div class="footer-icons">
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-github"></i>
+        <i class="fab fa-linkedin"></i>
+        <i class="fab fa-facebook"></i>
+      </div>
     </div>
-<<<<<<< HEAD
-  <script>
-=======
-<div class="footer">
-        <h1>Footer </h1>
-</div>
-</div>
+    </div>
+
+    
+     </div>
+  </div>
+
     <script>
->>>>>>> 946d8f8 (major UI changes)
       svg1 = document.querySelector(".svg1")
       console.log(svg1)
       svg2 = document.querySelector(".svg2")
@@ -993,10 +1036,7 @@
     
     
     </script>
-<<<<<<< HEAD
-=======
   
->>>>>>> 946d8f8 (major UI changes)
     {% endblock body %}
       
         

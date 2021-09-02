@@ -1,3 +1,4 @@
+
 .main{
     overflow-x: hidden;
     background: linear-gradient(90deg, rgba(208,255,254,1) 0%, rgba(202,254,255,1) 15%, rgba(103,230,237,1) 46%, rgba(219,254,249,1) 99%)
@@ -14,83 +15,6 @@
     background: linear-gradient(90deg, rgba(87,180,246,1) 0%, rgba(5,75,124,1) 52%, rgba(5,75,124,1) 52%, rgba(12,46,70,1) 100%);
     clip-path: polygon(100% 0%,100% 50% ,50% 100%,0% 50%, 0% 0%);
     }
-<<<<<<< HEAD
-    .svg1{
-        position: absolute;
-/*         animation: svg1ani 12s linear infinite; */
-        display: flex;
-        justify-content: center;
-        visibility: visible;
-    }
-    @keyframes svg1ani {
-        0%{
-            
-            visibility: visible;
-        }
-        30%{
-            visibility: hidden;
-        }
-        50%{
-            visibility: hidden;
-        }
-        100%{
-          
-            visibility: hidden;
-        }
-        
-    }
-    .svg2{
-        position: absolute;
-        visibility: hidden;
-/*         animation: svg2ani 12s linear 4s infinite; */
-        display: flex;
-        justify-content: center;
-        transform: scale(0.8);
-
-    }
-    @keyframes svg2ani {
-        0%{
-            
-            visibility: visible;
-        
-        }
-        30%{
-            visibility: hidden;
-        }
-        50%{
-            visibility: hidden;
-        }
-        100%{
-          
-            visibility: hidden;
-        }
-        
-    }
-    .svg3{
-        position: absolute;
-        visibility: hidden;
-/*         animation: svg3ani 12s linear 8s infinite; */
-        display: flex;
-        justify-content: center;
-    }
-    @keyframes svg3ani {
-        0%{
-            
-            visibility: visible;
-        }
-        30%{
-            visibility: hidden;
-        }
-        50%{
-            visibility: hidden;
-        }
-        100%{
-          
-            visibility: hidden;
-        }
-        
-    }
-=======
 
 .svgDiv::after{
     content: "";
@@ -124,7 +48,6 @@
     display: flex;
     justify-content: center;
 }
->>>>>>> 946d8f8 (major UI changes)
     
 #pro12,#pro22,#pro32{
     opacity: 0;
@@ -254,47 +177,22 @@
     }
 }
 
-@media only screen and (max-width:1000px) 
-{
-    .svgDiv{
-        top:40vh;
-    }
-    #svg_1_text{
-      
-        transform: scaleX(0.6);
-        transform-origin: center;
-       } 
-       
+.services{
+    text-align: center;
+    margin-top: 10vh;
+    font-family: 'Philosopher', sans-serif;
 }
-/* @media only screen and (max-width:560px)
-{
-    .svgDiv{
-        width: 400vw;
-    }
-} */
-/* @media only screen and (max-width:360px)
-{
-    .svgDiv{
-        width: 390vw;
-    }
-    
-} */
-@media only screen and (max-width:290px)
-{
-    #svg_1_text{
-        transform: scaleX(0.86);
-       }
-    
+.services span{
+    background-color: gold !important ;
 }
-<<<<<<< HEAD
-=======
 
 .cards{
-    margin: 4vh;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
     padding: 4vh;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .card-header{
@@ -304,11 +202,10 @@
 }
 
 .card{
-    max-width: 25rem !important;
+    max-width: 30% !important;
     transition: all 1s;
     font-family: 'Philosopher', sans-serif;
     position: relative;
-    height: 40vh;
  
 }
 .card:hover{
@@ -321,8 +218,6 @@
 
 .card:hover .face1{
    height: 10vh;
-   width: 20vh;
-   border-radius: 50%;
    background-color: #fff;
 }
 .card:hover .card-icon{
@@ -330,11 +225,13 @@
  }
 
  .card:hover .face2{
-     margin-top: 10vh;
+     margin-top: 2vh;
+     height: 100%;
+     visibility: visible;
  }
 .face1{
     
-    width: 25rem !important;
+    min-width: 100% !important;
     height: 40vh;
     background-color: #073668;
     color:white;
@@ -344,17 +241,173 @@
 
 }
 .face2{
-    position: absolute;
-    z-index: -1;
+ height: 0;
+ visibility: hidden;
 }
 .card-icon{
     height: 20vh;
     transition: all 1s;
 }
-.face2:hover{
-    /* z-index: 100; */
+.footer{
+    display: grid;
+    grid-template-columns:25% 30% 30%;;
+    font-family: 'Philosopher', sans-serif;
+    justify-content: space-around;
+    padding: 4vh;
+    background-color: darkslategray;
+    color: white;
+    
+
+   
+}
+
+.footer i{
+    margin: 2vh;
+    font-size: 1.2rem;
+    color:white;
+    transition: all 0.5s;
+    
+ 
+}
+.footer-contact{
+    display: flex;
+    flex-direction: column;
+}
+.footer-contact-div{
+    display: flex;
+    align-items: center;
+    position: relative; 
+    
+}
+.footer-contact-div::after{
+    content: "";
+    position: absolute;
+    height: 70%;
+    width: 0%;
+    left: 3.5rem;
+    border-bottom: 3px solid  gold;
+    transition: all 0.5s;
+
+}
+.footer-contact-div:hover::after{
+    width: 50%;
+}
+
+.footer-icons i:hover{
+    color: gold;
+
+}
+.footer-icons i{
+    font-size: 1.4rem;
 }
 
 
+.footer-heading h3{
+    color: black;
 
->>>>>>> 946d8f8 (major UI changes)
+}
+/* .footer-links{
+    margin-left: auto;
+} */
+.footer-list-links{
+    position: relative;
+}
+
+.footer-list-links::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 90%;
+    width: 0%;
+    border-bottom: 2px solid  gold;
+    transition: all 0.5s;
+}
+.footer-list-links:hover::after{
+    width: 50%;
+}
+
+@media only screen and (max-width:1000px) 
+{
+   
+    #svg_1_text{
+      
+        transform: scaleX(0.6);
+        transform-origin: center;
+       } 
+       
+}
+
+@media only screen and (max-width:730px){
+    .cards{
+        display: flex;
+        flex-direction: column !important;
+    }
+    .card-icon{
+        height: 20vh;
+        
+    }
+    .card{
+        max-width: 100% !important;
+        margin-top: 4vh;
+    }
+    .footer{
+        grid-template-columns: 50% 50%;
+    }
+    .footer-contact{
+        grid-column: span 3;
+        flex-direction: row;
+        justify-content: space-between;
+        transform: scale(0.9);
+    }
+    .footer-contact-tail{
+       align-items: flex-end;
+        display: flex;
+        flex-direction: row;
+    }
+    .about-me{  
+        transform: scale(0.9);
+    }
+    .footer-links{
+        transform: scale(0.9);
+    }
+    
+}
+
+@media only screen and (max-width:560px)
+{
+    
+    .svgDiv{
+        clip-path: polygon(100% 0%,100% 55% ,50% 85%,0% 55%, 0% 0%)
+    }
+    .svgDiv::after{
+        clip-path: polygon(100% 0%,100% 55% ,50% 85%,0% 55%, 0% 0%)
+    }
+    .footer{
+        grid-template-columns:100%;
+    }
+    .about-me{  
+         grid-row:2;
+         grid-column: span 2;
+    }
+    .footer-contact{
+        flex-direction: column;
+    }
+
+}
+@media only screen and (max-width:360px)
+{
+    .svgDiv{
+        clip-path: polygon(100% 0%,100% 50% ,50% 75%,0% 48%, 0% 0%);
+    }
+    .svgDiv::after{
+        clip-path: polygon(100% 0%,100% 50% ,50% 75%,0% 48%, 0% 0%);
+    }
+    
+}
+@media only screen and (max-width:290px)
+{
+    #svg_1_text{
+        transform: scaleX(0.86);
+       }
+    
+}
