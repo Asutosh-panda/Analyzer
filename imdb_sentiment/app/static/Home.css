@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 946d8f8ce1320fc9f98ea71fcf32f5bed5181b38
 .main{
     overflow-x: hidden;
     background: linear-gradient(90deg, rgba(208,255,254,1) 0%, rgba(202,254,255,1) 15%, rgba(103,230,237,1) 46%, rgba(219,254,249,1) 99%)
@@ -328,7 +331,13 @@
 
 @media only screen and (max-width:1000px) 
 {
+<<<<<<< HEAD
    
+=======
+    .svgDiv{
+        top:40vh;
+    }
+>>>>>>> 946d8f8ce1320fc9f98ea71fcf32f5bed5181b38
     #svg_1_text{
       
         transform: scaleX(0.6);
@@ -336,6 +345,7 @@
        } 
        
 }
+<<<<<<< HEAD
 
 @media only screen and (max-width:730px){
     .cards{
@@ -374,9 +384,13 @@
 }
 
 @media only screen and (max-width:560px)
+=======
+/* @media only screen and (max-width:560px)
+>>>>>>> 946d8f8ce1320fc9f98ea71fcf32f5bed5181b38
 {
     
     .svgDiv{
+<<<<<<< HEAD
         clip-path: polygon(100% 0%,100% 55% ,50% 85%,0% 55%, 0% 0%)
     }
     .svgDiv::after{
@@ -401,9 +415,18 @@
     }
     .svgDiv::after{
         clip-path: polygon(100% 0%,100% 50% ,50% 75%,0% 48%, 0% 0%);
+=======
+        width: 400vw;
+    }
+} */
+/* @media only screen and (max-width:360px)
+{
+    .svgDiv{
+        width: 390vw;
+>>>>>>> 946d8f8ce1320fc9f98ea71fcf32f5bed5181b38
     }
     
-}
+} */
 @media only screen and (max-width:290px)
 {
     #svg_1_text{
@@ -411,3 +434,75 @@
        }
     
 }
+<<<<<<< HEAD
+=======
+
+.cards{
+    margin: 4vh;
+    padding: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card-header{
+    text-align: center;
+    border-bottom: 0!important;
+    background-color: #fff;
+}
+
+.card{
+    max-width: 25rem !important;
+    transition: all 1s;
+    font-family: 'Philosopher', sans-serif;
+    position: relative;
+    height: 40vh;
+ 
+}
+.card:hover{
+    transform: translateY(-20px);
+    box-shadow: 25px 33px 66px -12px rgba(0,0,0,0.69);
+    -webkit-box-shadow: 25px 33px 66px -12px rgba(0,0,0,0.69);
+    -moz-box-shadow: 25px 33px 66px -12px rgba(0,0,0,0.69);
+    
+}
+
+.card:hover .face1{
+   height: 10vh;
+   width: 20vh;
+   border-radius: 50%;
+   background-color: #fff;
+}
+.card:hover .card-icon{
+    height: 10vh;  
+ }
+
+ .card:hover .face2{
+     margin-top: 10vh;
+ }
+.face1{
+    
+    width: 25rem !important;
+    height: 40vh;
+    background-color: #073668;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.face2{
+    position: absolute;
+    z-index: -1;
+}
+.card-icon{
+    height: 20vh;
+    transition: all 1s;
+}
+.face2:hover{
+    /* z-index: 100; */
+}
+
+
+
+>>>>>>> 946d8f8ce1320fc9f98ea71fcf32f5bed5181b38
