@@ -1,1 +1,3 @@
-console.log("all set")
+console.log("all setss")
+
+ console.log(document.querySelector(".loader"))

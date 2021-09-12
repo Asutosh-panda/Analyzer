@@ -1,32 +1,104 @@
 {% extends 'base.html' %}
   {% block body %}
-        <div class="input" style="height: 60vh;margin-bottom: 4vh;">
+  
+  <div class="imdb-main" >
+
+    <div class="spinner-border text-primary loader" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+      <div class="input" style="height: 60vh;margin-bottom: 4vh;display: none;">
             <form method="POST">
                 {% csrf_token %}
-                <textarea placeholder="Enter the movie review" style="width: -webkit-fill-available;height: 60vh;" name="submit"></textarea>
-                <div class="btn" style="display: flex;justify-content: space-evenly;margin-top: 2vh;">
+                <div class="text">
+                <textarea placeholder="Enter the movie review"  name="submit"></textarea>   
+              </div>
+                <div  class="btn" style="display: flex;justify-content: space-evenly;margin-top: 2vh;">
                 <!-- <button  onclick="analzeFunc()">Analyze</button> -->
-                <button type="submit" class="btn btn-outline-warning" style="color: yellow;">Analyze</button>
+                <button onclick="loader()"  class="btn btn-outline-warning" style="color: yellow;">Analyze</button>
+                </div>
             </form>
-        </div>
-        </div>
+      </div>
+
+
         <div class="output" style="margin-top: 4vh;">
-           <hr>
+          
             {% if content != "empty" %}
-             {%if content == "positive" %}
+             {%if content == "positive"%}
             <div class="alert alert-success alert-dismissible fade show" role="alert">
-                
-                <strong> {{content}} !</strong> This is a great movie...GO for it champ .
+              <!-- <div class="button" on="party.confetti(this)">Click me!</div> -->
+              
+              <strong> {{content}} !</strong> This is a great movie...GO for it champ .
                 <button type="button" class="close" data-bs-dismiss="alert" aria-label="Close">x</button>
               </div>
               {% endif %}
               {% if content == 'negetive' %}
               <div class="alert alert-danger alert-dismissible fade show" role="alert">
                 <strong> {{content}} !</strong> This is not an ideal choice...Not recommended .
+                 
                 <button type="button" class="close" data-bs-dismiss="alert" aria-label="Close">x</button>
               </div>
             {% endif %}
             {% endif %}
         </div>
+      </div>
+
+  <script>
+     window.addEventListener('load',()=>{
+       console.log("hji")
+     
+       setTimeout(()=>{
+        document.querySelector(".loader").style.display ="none";
+        document.querySelector(".input").style.display ="block";
+       },1000)
+      
    
+  })
+
+
+//   document.onreadystatechange = function() {
+//     if (document.readyState !== "complete") {
+//         var inp =document.querySelector(".input")
+//         document.querySelector(".loader").style.visibility = "visible";
+//     } else {
+//         document.querySelector(".loader").style.display = "none";
+//         document.querySelector(".input").style.visibility = "visible";
+//     }
+// };
+  // setTimeout(()=>{
+  //           document.querySelector('.input').style.visibility = 'hidden'
+  //           document.querySelector('.loader').style.visibility='visible'
+  // },3000)
+  // document.querySelector('.loader').style.visibility = 'hidden'
+  // document.querySelector('.input').style.visibility='visible'
+
+    var a = "{{content}}";
+    const canvas = document.getElementById('.output')
+    const jsConfetti = new JSConfetti({ canvas })
+    if (a=='positive'){
+      jsConfetti.addConfetti({
+      emojis: ['🍿'],
+      emojiSize: 50,
+      confettiNumber: 300,
+    })
+    }
+    else if(a==="negetive"){
+      jsConfetti.addConfetti({
+      emojis: ['💩'],
+      emojiSize: 100,
+      confettiNumber: 40,
+    })
+    }
+    else{
+       
+    }
+
+
+
+
+
+
+
+  </script>
+  
+ 
         {% endblock body %}
