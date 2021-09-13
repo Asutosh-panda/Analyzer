@@ -374,6 +374,12 @@
     .hate-main .text{
         transform: scale(1.1) !important;
     }
+   .imdb-main .loader svg{
+        transform: scale(1) !important;
+    }
+    .hate-main .loader svg{
+        transform: scale(1) !important;
+    }
     
 }
 
@@ -386,7 +392,8 @@
 .imdb-main{
     background: linear-gradient(
         90deg, #1CB5E0 0%, #000851 100%) ;
-        min-height: 100vh;
+        
+       
 }
 
 @media only screen and (max-width:560px)
@@ -475,12 +482,12 @@
     flex-direction: column;
     align-items: center;
     max-width: 100vw;
-    min-height: 100vh;
+
 }
 
 
 .hate-main .text{
-    background-image: url(./images/hat_msg_img-removebg-preview.png);
+    background-image: url("./images/hat_msg_img-removebg-preview.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -505,9 +512,7 @@
 .hate-main .btn{
      margin-top: 6vh;
 }
-.hate-main .input{
-      margin-bottom: 4vh;    
-}
+
 
 .hate-main svg .thunder_right{
     position: relative;
@@ -525,4 +530,37 @@
     
 
 }
+a{
+    text-decoration:none;
+    color:inherit;
+    cursor:pointer;
+}
+.loader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+}
 
+.imdb-main .loader svg{
+    transform: scale(0.5);
+}
+.hate-main .loader svg{
+    transform: scale(0.3);
+}
+
+.imdb-main .loader svg #movie_reel_1{
+    animation: circleani 0.9s linear infinite;
+    transform-origin: 35.4% 42.7%;
+}
+.imdb-main .loader #count2,#count1{
+    visibility: hidden;
+    transition: all 0.1s ease-in-out ;
+}
+.imdb-main .loader #count3{
+    visibility: visible;
+}
+
+.hate-main .loader #lens_full,#headphone_full,#mask_full{
+    visibility: hidden;
+}

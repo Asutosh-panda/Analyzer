@@ -21,9 +21,9 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
  
-    <title>Document</title>
+    <title>Analyzer</title>
     {% load static%}
-    <link rel="stylesheet" type="text/css" href="{% static 'Home.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'Homes.css' %}">
     <script src="{% static 'app.js' %}"></script> 
     <link href="../static/images/fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js">
@@ -51,5 +51,49 @@
           </div>
       </nav>
     {% block body %}{% endblock body %}
+    <div class="footer">
+      
+      <div class="footer-links footer-heading">
+        <h3> <span class="badge bg-warning">Quick Links</h3>
+         <ul class="list-links">
+          <a href ="/home"> <li class="footer-list-links">Home</li></a>
+          <a href ="/imdb"> <li class="footer-list-links">Movie Analyzer</li></a>
+          <a href ="/hate"> <li class="footer-list-links">Hate Analyzer</li></a>
+          <a href="/" ><li class="footer-list-links">Contact us</li></a>
+           
+         </ul>
+      </div>
+
+  <div class="about-me footer-heading">
+    <h3> <span class="badge bg-warning">About Us</h3>
+    <p>
+      Machine Learning and Deep Learning Geek 👨‍🎓. <br>
+      Getting hands dirty in Natural Language Processing and Computer Vision 🔨.<br>
+      Do Check out the links (Github) for more Awesome Projects 😇.
+    </p>
+  </div>
+
+  <div class="footer-contact footer-heading">
+    <div class="footer-contact-head">
+      <h3> <span class="badge bg-warning">Contact Us</h3>
+    <div class="footer-contact-div">
+    <i class="fas fa-map-marked-alt"></i>C/39 Sector 14,Rourkela,Odisha,India.
+  </div>
+  <div class="footer-contact-div">
+    <i class="fas fa-phone"></i>9668281322
+  </div>
+  <div class="footer-contact-div">
+    <i class="fas fa-envelope"></i> pandasutosh@gmail.com
+  </div>
+</div>
+<div class="footer-contact-tail">
+      <div class="footer-icons">
+        <a href = "https://www.instagram.com/name_is___nani/"><i class="fab fa-instagram"></i></a>
+       <a href="https://github.com/Asutosh-panda"><i class="fab fa-github"></i></a> 
+        <a href="https://www.linkedin.com/in/asutosh-panda-0b2865210/"><i class="fab fa-linkedin"></i></a> 
+        <a href="https://www.linkedin.com/in/asutosh-panda-0b2865210/"><i class="fab fa-facebook"></i></a> 
+      </div>
+  </div>
+    </div>
 </body>
 </html>
