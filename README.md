@@ -20,9 +20,9 @@ https://analyzer-nlp.herokuapp.com/
 ## Checkout the HTML Template ->
 #### .> https://github.com/Asutosh-panda/Analyzer/blob/main/imdb_sentiment/app/template/
 
-## Checkout the routes ->
+## Checkout the routes.py ->
 #### .> https://github.com/Asutosh-panda/Analyzer/blob/main/imdb_sentiment/app/urls.py
 
-## Checkout the views ->
+## Checkout the views.py ->
 #### .>https://github.com/Asutosh-panda/Analyzer/blob/main/imdb_sentiment/app/views.py
 
