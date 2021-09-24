@@ -10,19 +10,19 @@ https://analyzer-nlp.herokuapp.com/
 
 ### How To Get Started ?
 #### .> Go to the site.(Link above)
-#### .> Next, route to the movie analysis. Click on the input field , enter/paste the movie review and hit analyze. Brovo!! You did it 
-#### .> Next, route to the hate analysis. Click on the input field , enter/paste the hate speech/text and hit analyze. Brovo!! You did it 
+#### .> Next, route to the movie analysis(https://analyzer-nlp.herokuapp.com/imdb). Click on the input field , enter/paste the movie review and hit analyze. Brovo!! You did it 
+#### .> Next, route to the hate analysis(https://analyzer-nlp.herokuapp.com/hate). Click on the input field , enter/paste the hate speech/text and hit analyze. Brovo!! You did it 
 
 
 ## See the NLP Model code ->
-#### .> imdb_sentiment/app/mlModel/ 
+#### .> https://github.com/Asutosh-panda/Analyzer/blob/main/imdb_sentiment/app/mlModel/ 
 
 ## Checkout the HTML Template ->
-#### .> imdb_sentiment/app/template/
+#### .> https://github.com/Asutosh-panda/Analyzer/blob/main/imdb_sentiment/app/template/
 
 ## Checkout the routes ->
-#### .> imdb_sentiment/app/urls.py/
+#### .> https://github.com/Asutosh-panda/Analyzer/blob/main/imdb_sentiment/app/urls.py
 
 ## Checkout the views ->
-#### .>imdb_sentiment/app/views.py/
+#### .>https://github.com/Asutosh-panda/Analyzer/blob/main/imdb_sentiment/app/views.py
 
