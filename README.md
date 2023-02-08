@@ -6,9 +6,10 @@ https://analyzer-nlp.herokuapp.com/
 ##### .> NLP based web-app to help users save time of reading long tedious text movie reviews by converting them to singular sentiment.Moreover it avoids any kind of spoiler. So, movie lovers get your hands over it.
 ##### .> The model was trained over IMDB dataset available on kaggle.
 ##### .> After performing all types of data cleaing and pre-processing the clean data was feeded to different models.
-##### .> Logistic Regression was found to be the best performer with 89.24% accuracy. The confusion matrix was as follows :
-#####         [[4345  616]
-#####            [ 460 4579]]
+##### .> Logistic Regression was found to be the best performer with 89.24% accuracy. The confusion matrix out of 10000 data was as follows :
+#####         [[4345    616]
+#####            [ 460   4579]]
+##### .>
 ##### .> Another feature is hate speech/text detection. A user can also use this as an API for his/her web/mobile app
 
 ### How To Get Started ?
